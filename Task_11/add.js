@@ -4,6 +4,7 @@ const addForm = document.getElementById("add-form");
 
 addForm.addEventListener("submit", async (event) => {
   event.preventDefault();
+  document.getElementById("submit").setAttribute("disabled", true);
   const skillInput = document.getElementById("skill");
   const skill = skillInput.value.trim();
 
